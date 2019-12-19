@@ -1,41 +1,42 @@
-# The module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# Is Later [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/is-later/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/is-later)
 
-My awesome module.
+Check if a version is later than another.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/is-later.png)](https://npmjs.com/package/is-later)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install is-later
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const isLater = require("is-later");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+isLater("1.0.0", "2.0.0");
+//=> false
+
+isLater("1.0.0", "1.0.0");
+//=> false
+
+isLater("1.0.0", "0.0.0");
+//=> true
 ```
 
 ## API
 
-### theModule(input, options?)
+### isLater(a, b)
 
-#### input
+#### a
 
 Type: `string`
 
-Lorem ipsum.
+The first version to compare.
 
-#### options
+#### b
 
-Type: `object`
+Type: `string`
 
-##### postfix
-
-Type: `string`\
-Default: `rainbows`
-
-Lorem ipsum.
+The second version to compare.

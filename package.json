@@ -1,8 +1,8 @@
 {
-    "name": "the-module",
+    "name": "is-later",
     "version": "0.0.0",
-    "description": "My awesome module.",
-    "repository": "https://github.com/Richienb/the-module.git",
+    "description": "Check if a version is later than another.",
+    "repository": "https://github.com/Richienb/is-later.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
     "license": "MIT",
     "main": "index.js",
@@ -11,14 +11,22 @@
         "index.d.ts"
     ],
     "engines": {
-        "node": ">=8"
+        "node": ">=4"
     },
     "scripts": {
         "lint": "xo",
         "test": "yarn lint && ava"
     },
-    "keywords": [],
-    "dependencies": {},
+    "keywords": [
+        "later",
+        "semver",
+        "version",
+        "compare"
+    ],
+    "dependencies": {
+        "clean-semver": "^1.0.0",
+        "semver": "^7.1.1"
+    },
     "devDependencies": {
         "ava": "^2.1.0",
         "eslint-config-richienb": "^0.2.3",
