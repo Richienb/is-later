@@ -1,6 +1,6 @@
 {
     "name": "is-later",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Check if a version is later than another.",
     "repository": "https://github.com/Richienb/is-later.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
