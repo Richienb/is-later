@@ -24,7 +24,7 @@
         "compare"
     ],
     "dependencies": {
-        "clean-semver": "^1.0.0",
+        "clean-semver": "^1.0.1",
         "semver": "^7.1.1"
     },
     "devDependencies": {
